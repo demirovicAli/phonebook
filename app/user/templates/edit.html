@@ -1,0 +1,51 @@
+ 
+    <header>
+        <h3>User profile  {{user.username}}</h3>
+    </header>
+ 
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img ng-src="assets/img/profile-image.jpg" alt="User profile image">
+            </div>
+           
+        </div>
+        <div class="col-md-8">
+            <h3> {{user.username}}</h3>
+            <p>
+                <strong>First Name:
+                </strong>
+                 <input ng-model="user.firstName"/>
+               </p>
+            <p>
+             <p>
+                <strong>Last Name:
+                </strong>
+                 <input ng-model="user.lastName"/>
+               </p>
+            <p>
+              <p>
+                <strong>City:
+                </strong>
+                 <input ng-model="user.city"/>
+               </p>
+            <p>
+                <p>
+                <strong>Phone:
+                </strong>
+                 <input ng-model="user.phone"/>
+               </p>
+            <p>
+            <p>
+                <strong>Mail:
+                </strong>
+                 <input ng-model="user.email"/>
+               </p>
+               <p>
+                <strong>skype:
+                </strong>
+                 <input ng-model="user.skype"/>
+               </p>
+                <button type="button" class="btn btn-default" ng-click="editUser(user)">Save</button>
+        </div>
+    </div>
